@@ -64,6 +64,9 @@
                     ></v-text-field>
                   </v-col>
                 </v-row>
+
+
+                <!--
                 <v-row>
                   <v-col cols="15" sm="6" md="4">
                     <v-text-field
@@ -73,6 +76,7 @@
                     ></v-text-field>
                   </v-col>
                 </v-row>
+                -->
                 
                 <v-row>
                   <v-col cols="15" sm="6" md="4">
@@ -214,7 +218,7 @@ export default {
             userData["street"] = result.data[i].address.street;
             userData["city"] = result.data[i].address.city;
             userData["zip"] = result.data[i].address.zip;
-            userData["job"] = result.data[i].job;
+//            userData["job"] = result.data[i].job;
             userList.push(userData);
           }
           this.userList = userList;
@@ -247,7 +251,6 @@ export default {
           .delete("/handson?ssn="+this.editedItem.ssn)
           .then((result) => {
             console.log(result);
-            //Object.assign(this.shipList[this.editedIndex], this.editedItem);
             this.listUserInfo();
           });
       this.closeDelete();

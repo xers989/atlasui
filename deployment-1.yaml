@@ -15,11 +15,9 @@ spec:
     spec:
       containers:
       - name: vuejsui
-        image: iad.ocir.io/poc_samsungsds/vuejsui:1.0
+        image: gcr.io/kyudong-kim/vuejsui:1.0
         imagePullPolicy: Always
         ports:
         - name: http
           containerPort: 8080
           protocol: TCP
-      imagePullSecrets:
-        - name: ocirregistry
