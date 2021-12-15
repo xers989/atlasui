@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: vuejsui
-        image: gcr.io/kyudong-kim/vuejsui:1.0
+        image: gcr.io/kyudong-kim/vuejsui:2.0
         imagePullPolicy: Always
         ports:
         - name: http
