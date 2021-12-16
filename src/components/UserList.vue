@@ -64,7 +64,7 @@
                     ></v-text-field>
                   </v-col>
                 </v-row>
-<!--
+
                 <v-row>
                   <v-col cols="15" sm="6" md="4">
                     <v-text-field
@@ -74,7 +74,7 @@
                     ></v-text-field>
                   </v-col>
                 </v-row>
--->               
+              
                 <v-row>
                   <v-col cols="15" sm="6" md="4">
                     <v-text-field
@@ -215,7 +215,7 @@ export default {
             userData["street"] = result.data[i].address.street;
             userData["city"] = result.data[i].address.city;
             userData["zip"] = result.data[i].address.zip;
-//            userData["job"] = result.data[i].job;
+            userData["job"] = result.data[i].job;
             userList.push(userData);
           }
           this.userList = userList;
@@ -276,7 +276,7 @@ export default {
       jsonBody["phone"] = this.editedItem.phone;
       jsonBody["address"] = {street: this.editedItem.street, city: this.editedItem.city, zip: this.editedItem.zip};
       jsonBody["name"] = {firstName: this.editedItem.firstName, lastName: this.editedItem.lastName};
-//      jsonBody["job"] = this.editedItem.job;
+      jsonBody["job"] = this.editedItem.job;
 
 
       if (this.editedIndex > -1) {
